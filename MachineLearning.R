@@ -1,0 +1,5 @@
+training <- read.csv("/home/vermes/Downloads/pml-training.csv")
+preProcess(training)
+# pureTraining <- subset(training,select=-c(classe))
+head(pureTraining)
+nearZeroVar(training,saveMetrics=TRUE)
